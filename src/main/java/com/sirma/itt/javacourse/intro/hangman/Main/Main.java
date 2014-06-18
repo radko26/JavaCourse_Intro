@@ -1,14 +1,13 @@
 package main.java.com.sirma.itt.javacourse.intro.hangman.Main;
 
 import java.io.IOException;
-import java.util.Scanner;
 
 import main.java.com.sirma.itt.javacourse.intro.hangman.WordGen.GenInfo;
 import main.java.com.sirma.itt.javacourse.intro.hangman.WordGen.Random;
 import main.java.com.sirma.itt.javacourse.intro.hangman.WordGen.RandomWordGenerator;
 
 /**
- * 
+ * Hangman main class.
  * 
  * @author Radoslav
  */
@@ -16,7 +15,6 @@ import main.java.com.sirma.itt.javacourse.intro.hangman.WordGen.RandomWordGenera
 public class Main {
 
 	private static char guess;
-	private static Scanner input;
 	private static RandomWordGenerator wordGen;
 	private static int len;
 	private static int tries;
@@ -48,7 +46,7 @@ public class Main {
 	private static boolean checkGuess(char guess) {
 		boolean result = false;
 		for (int i = 0; i < word.length(); i++) {
-			if (word.charAt(i) == guess) {
+			if (word.charAt(i) == guess && guessesResult[i] != true) {
 				guessesResult[i] = true;
 				result = true;
 			}
@@ -101,7 +99,7 @@ public class Main {
 			} else {
 				correctGuesses++;
 				System.out.print("Yuppy " + (word.length() - correctGuesses)
-						+ " more \nF");
+						+ " more \n");
 			}
 			if (correctGuesses == word.length()) {
 				System.out.print("You win \n");
