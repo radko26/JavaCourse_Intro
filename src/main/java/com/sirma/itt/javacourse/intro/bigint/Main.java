@@ -9,6 +9,6 @@ package main.java.com.sirma.itt.javacourse.intro.bigint;
 public class Main {
 	public static void main(String[] args) {
 		BigInt b = new BigInt();
-		System.out.println(b.calculate("101", "99"));
+		System.out.println(b.calculate("1121", "99"));
 	}
 }
