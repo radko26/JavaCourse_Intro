@@ -29,7 +29,8 @@ public class Main {
 		manipulator.reverse();
 		manipulator.printArray();
 		manipulator.mWeight();
-		manipulator.qsort(0, arr.length - 1);
+		// manipulator.qsort(0, 4);
+
 		manipulator.printArray();
 	}
 

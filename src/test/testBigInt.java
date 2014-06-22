@@ -1,17 +1,12 @@
 package test;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
-import java.io.ByteArrayOutputStream;
-import java.io.PrintStream;
 import java.math.BigInteger;
-import java.nio.file.StandardOpenOption;
 
 import main.java.com.sirma.itt.javacourse.intro.bigint.BigInt;
-import main.java.com.sirma.itt.javacourse.intro.gcd.Main;
 
 import org.junit.Before;
-import org.junit.Rule;
 import org.junit.Test;
 
 /**

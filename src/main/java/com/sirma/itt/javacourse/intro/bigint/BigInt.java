@@ -64,7 +64,7 @@ public class BigInt {
 			}
 			sum[sumIndex] = (char) (value + '0');
 		}
-		
+
 		String output = new String("");
 		if (sum[0] != '0') {// only checking if we need to
 							// add new digit to the sum
